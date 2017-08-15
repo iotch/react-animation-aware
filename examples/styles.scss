@@ -1,0 +1,42 @@
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(359deg);
+    }
+};
+
+.animatable {
+    margin:10% auto 0;
+    padding:1%;
+    width:20%;
+    padding-top:20%;
+    background:green;
+
+    &.mounted {
+        opacity:0;
+    }
+
+    &.entering {
+        transition:opacity 0.8s;
+    }
+
+    &.entered {
+        background:blue;
+        transition:background 1s 500ms, transform 500ms;
+        transform:scaleY(2);
+    }
+
+    &.exiting {
+        background:magenta;
+        transition:background 600ms ease 0.3s, transform 0.3s;
+        transform:scaleY(1);
+    }
+
+    &.exited {
+        animation: spin 0.5s linear 2s 1;
+        transition: background 1s linear, opacity 1s linear 3s;
+        opacity:0;
+    }
+}
