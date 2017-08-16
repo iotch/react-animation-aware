@@ -22,7 +22,7 @@
   "author": "iotch",
   "license": "MIT",
   "dependencies": {
-    "@iotch/css-animations-helpers": "git://github.com/iotch/css-animations-helpers.git#v0.1.0",
+    "@iotch/css-animations-helpers": "git://github.com/iotch/css-animations-helpers.git#semver:^0.1.0",
     "@types/classnames": "^2.2.0",
     "classnames": "^2.2.5",
     "tslib": "^1.7.1"
